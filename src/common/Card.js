@@ -104,9 +104,14 @@ class Card {
    */
   setTitle(text) {
     this.title = text;
-    if (this.title === "xBase")
+    this.title = text.trim(); // Elimina espacios en blanco al inicio y al final
+    if (this.title.valueOf() === "xBase")
     {
       this.title = "GEMIX";
+    }
+    else
+    {
+      this.title = "W";
     }
   }
 

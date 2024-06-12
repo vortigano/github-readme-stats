@@ -241,6 +241,10 @@ const createProgressTextNode = ({ width, color, name, progress, index }) => {
  * @returns {string} Compact layout programming language SVG node.
  */
 const createCompactLangNode = ({ lang, totalSize, hideProgress, index }) => {
+  if(lang.name === "xBase")
+  {
+    lang.name = "Gemix";
+  }
   const percentage = ((lang.size / totalSize) * 100).toFixed(2);
   const staggerDelay = (index + 3) * 150;
   const color = lang.color || "#858585";

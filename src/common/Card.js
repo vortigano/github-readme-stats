@@ -104,6 +104,10 @@ class Card {
    */
   setTitle(text) {
     this.title = text;
+    if (this.title === "xBase")
+    {
+      this.title = "GEMIX";
+    }
   }
 
   /**

@@ -25,7 +25,7 @@ class Card {
     border_radius = 4.5,
     colors = {},
     customTitle,
-    defaultTitle = "",
+    defaultTitle = "S",
     titlePrefixIcon,
   }) {
     this.width = width;
